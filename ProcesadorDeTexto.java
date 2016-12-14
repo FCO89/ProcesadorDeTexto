@@ -4,6 +4,7 @@ import javax.swing.*;
 import javax.swing.text.*; 
 import java.awt.*; 
 
+//Primera version del programa
 
 public class ProcesadorDeTexto {
 
@@ -60,7 +61,7 @@ class PanelProcesador extends JPanel{
 		
 		estilos=new JMenu("Estilos"); 
 		
-		tamanio=new JMenu("Tamaño");  
+		tamanio=new JMenu("TamaÃ±o");  
 		
 		configuraMenu("Arial","Fuente","Arial",9,1,""); 
 		
@@ -74,13 +75,13 @@ class PanelProcesador extends JPanel{
 		configuraMenu("Cursiva","Estilos","",Font.ITALIC,1,"bin/graficos/cursiva.gif"); 
 		
 		//------------------------------------------- 
-		configuraMenu("12","Tamaño","",9,12,""); 
+		configuraMenu("12","TamaÃ±o","",9,12,""); 
 		
-		configuraMenu("16","Tamaño","",9,16,""); 
+		configuraMenu("16","TamaÃ±o","",9,16,""); 
 		
-		configuraMenu("20","Tamaño","",9,20,""); 
+		configuraMenu("20","TamaÃ±o","",9,20,""); 
 		
-		configuraMenu("24","Tamaño","",9,24,"");
+		configuraMenu("24","TamaÃ±o","",9,24,"");
 		
 		//--------AGREGAR LOS ELEMENTOS MENU A LA BARRA DEL MENU-----\\
 		mibarra.add(fuente); 
@@ -118,11 +119,11 @@ class PanelProcesador extends JPanel{
 			}
 			
 			estilos.add(elemento);
-		}else if(menu=="Tamaño"){
+		}else if(menu=="TamaÃ±o"){
 			
 			tamanio.add(elemento);
 		
-		elemento.addActionListener(new StyledEditorKit.FontSizeAction("cambia tamaño", tam)); 
+		elemento.addActionListener(new StyledEditorKit.FontSizeAction("cambia tamaÃ±o", tam)); 
 		
 		}
 	} 
